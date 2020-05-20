@@ -5,6 +5,8 @@ import axiosImport from 'axios';
 import {fetchNewsList} from '../actions/uiAction';
 import {connect} from 'react-redux';
 
+/* Not yet completed */
+
 
 class NewsFeed extends PureComponent{
 
@@ -17,8 +19,8 @@ componentDidMount(){
         return(
             <View>
                 <Header title="News Feed" onPressOpen={() => this.props.navigation.openDrawer() } />
-                {/* {newsFeed.map(news => <Text style={{borderWidth: 1}} >{news.title} </Text> )} */}
-        <Text> ,/ {newsFeed}</Text>
+                { {newsFeed.map(news => <Text style={{borderWidth: 1}} >{news.title} </Text> )} }
+        
                 </View>
         )
     }
